@@ -25,6 +25,11 @@ p {
 footer a {
   display: flex;
   justify-content: center;
+  color: var(--tertiary-color);
+}
+
+footer a:hover {
+  color: var(--secondary-color);
 }
 
 .email-link {
@@ -34,4 +39,17 @@ footer a {
 
 .email-link:hover {
   color: var(--secondary-color);
+}
+
+@media (max-width: 576px) {
+  p,
+  footer {
+    font-size: 14px;
+  }
+  h1 {
+    font-size: 24px;
+  }
+  h2 {
+    font-size: 22px;
+  }
 }
