@@ -1,4 +1,37 @@
-h1 {
-  color: red;
-  background-color: yellow;
+:root {
+  --primary-color: #385170;
+  --secondary-color: #9fd3c7;
+  --tertiary-color: #142d4c;
+}
+
+body {
+  background-color: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+  margin-top: 50px;
+}
+
+h1,
+h2 {
+  color: var(--tertiary-color);
+  text-align: center;
+}
+
+p {
+  font-size: 18px;
+  line-height: 1.5;
+  color: var(--primary-color);
+  text-align: center;
+}
+
+footer a {
+  display: flex;
+  justify-content: center;
+}
+
+.email-link {
+  color: var(--tertiary-color);
+  text-decoration: none;
+}
+
+.email-link:hover {
+  color: var(--secondary-color);
 }
